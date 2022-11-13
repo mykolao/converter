@@ -1,0 +1,10 @@
+<header>
+    <h1>Converter</h1>
+    <ul>
+      <li *ngFor="let pair of data.pairs; index as i">
+        {{ pair[0] }}/{{ pair[1] }} <span>:</span>
+        {{ data.values[i] | number: "1.2-2" }}
+      </li>
+    </ul>
+  </header>
+  
