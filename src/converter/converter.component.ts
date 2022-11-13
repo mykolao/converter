@@ -54,7 +54,7 @@ export class ConverterComponent implements OnInit {
   // Value 2 Methods
   updateSecondCurrency(value: string) {
     this.selectedCurrencies[1] = this.getCurrencyByCode(value);
-    this.calculateFirstValue();
+    this.calculateSecondValue();
     this.calculateInfoValue();
   }
 
