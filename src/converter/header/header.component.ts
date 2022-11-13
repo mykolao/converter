@@ -4,7 +4,7 @@ import { IFeaturedData } from "src/app/app.types";
 @Component({
   selector: "app-header",
   templateUrl: "./header.component.html",
-  styles: []
+  styleUrls: ["./header.component.scss"]
 })
 export class HeaderComponent {
   @Input() data: IFeaturedData = { pairs: [], values: [] };

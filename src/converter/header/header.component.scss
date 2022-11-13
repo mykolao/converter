@@ -1,0 +1,19 @@
+@use "/src/var";
+
+header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 8px;
+
+  h1 {
+    font-size: 1.7em;
+    color: var.$c-blue;
+  }
+
+  ul {
+    li {
+      font-size: 0.91em;
+    }
+  }
+}
