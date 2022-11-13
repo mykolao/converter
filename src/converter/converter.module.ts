@@ -4,9 +4,10 @@ import { ConverterComponent } from "./converter.component";
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { InfoComponent } from './info/info.component';
+import { CurrencyInputComponent } from './currency-input/currency-input.component';
 
 @NgModule({
-  declarations: [ConverterComponent, HeaderComponent, FooterComponent, InfoComponent],
+  declarations: [ConverterComponent, HeaderComponent, FooterComponent, InfoComponent, CurrencyInputComponent],
   imports: [CommonModule],
   exports: [ConverterComponent]
 })

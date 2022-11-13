@@ -1,0 +1,21 @@
+<div class="container">
+  <input
+    type="number"
+    placeholder="0"
+    min="0"
+    [value]="value"
+    (change)="onInputChange.emit(getInputNumber($event))"
+  />
+  <select
+    [value]="selectedCurrency.code"
+    (change)="onCurrencyChange.emit(getSelectedCurrency($event))"
+  >
+    <option
+      *ngFor="let currency of currencies"
+      [value]="currency.code"
+      [selected]="currency.code === selectedCurrency.code"
+    >
+      {{ currency.code }}
+    </option>
+  </select>
+</div>
