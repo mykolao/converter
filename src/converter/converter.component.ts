@@ -5,7 +5,7 @@ import { BASE_CURRENCY, FEATURES_PAIRS } from "src/config";
 @Component({
   selector: "app-converter",
   templateUrl: "./converter.component.html",
-  styles: []
+  styleUrls: ["./converter.component.scss"]
 })
 export class ConverterComponent implements OnInit {
   @Input() data: ICurrency[] = [];
