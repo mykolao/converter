@@ -1,0 +1,27 @@
+<div class="container">
+  <app-header [data]="featuredData"></app-header>
+  <main>
+    <app-info [selectedCurrencies]="selectedCurrencies" [value]="infoValue"></app-info>
+    <section class="inputs">
+      <app-currency-input
+        [value]="inputValues[0]"
+        [selectedCurrency]="selectedCurrencies[0]"
+        [currencies]="data"
+        (onInputChange)="updateFirstInput($event)"
+        (onCurrencyChange)="updateFirstCurrency($event)"
+      ></app-currency-input>
+      <app-currency-input
+        [value]="inputValues[1]"
+        [selectedCurrency]="selectedCurrencies[1]"
+        [currencies]="data"
+        (onInputChange)="updateSecondInput($event)"
+        (onCurrencyChange)="updateSecondCurrency($event)"
+      ></app-currency-input>
+    </section>
+    <section class="controls">
+      <button (click)="swapInputs()">Swap Values</button>
+      <button (click)="swapCurrencies()">Swap Currencies</button>
+    </section>
+  </main>
+  <app-footer></app-footer>
+</div>

@@ -4,7 +4,7 @@ import { BASE_CURRENCY, FEATURES_PAIRS } from "src/config";
 
 @Component({
   selector: "app-converter",
-  template: ` <main>Converter</main> `,
+  templateUrl: "./converter.component.html",
   styles: []
 })
 export class ConverterComponent implements OnInit {
