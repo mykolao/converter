@@ -1,0 +1,7 @@
+<ng-template [ngIf]="isLoading" [ngIfElse]="showConverter">
+  <app-loader></app-loader>
+</ng-template>
+
+<ng-template #showConverter>
+  <app-converter [data]="currencyValues"></app-converter>
+</ng-template>

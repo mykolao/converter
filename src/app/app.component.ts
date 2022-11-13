@@ -4,7 +4,7 @@ import { CurrencyApiService } from "./currency-api.service";
 
 @Component({
   selector: "app-root",
-  template: `<h1>App</h1>`,
+  templateUrl: "./app.component.html",
   styles: []
 })
 export class AppComponent implements OnInit {
