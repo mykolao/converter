@@ -1,0 +1,33 @@
+@use "/src/var";
+
+.container {
+  display: flex;
+  gap: 4px;
+
+  font-size: 0.8em;
+
+  input {
+    background: none;
+    outline: none;
+    padding: 4px;
+    margin: 4px 0;
+    border: 2px solid var.$c-text;
+    border-radius: 4px;
+
+    &:focus {
+      border-color: var.$c-blue;
+    }
+  }
+
+  select {
+    padding: 4px;
+    margin: 4px 0;
+    border: 2px solid var.$c-text;
+    border-radius: 4px;
+    outline: none;
+
+    &:focus {
+      border-color: var.$c-blue;
+    }
+  }
+}

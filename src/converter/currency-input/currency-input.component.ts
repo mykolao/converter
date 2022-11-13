@@ -4,7 +4,7 @@ import { ICurrency } from "src/app/app.types";
 @Component({
   selector: "app-currency-input",
   templateUrl: "./currency-input.component.html",
-  styles: []
+  styleUrls: ["./currency-input.component.scss"]
 })
 export class CurrencyInputComponent implements OnInit, OnChanges {
   @Input() value: number = 0;
