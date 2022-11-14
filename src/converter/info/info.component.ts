@@ -4,7 +4,7 @@ import { ICurrency } from "src/app/app.types";
 @Component({
   selector: "app-info",
   templateUrl: "./info.component.html",
-  styles: []
+  styles: ["./info.component.scss"]
 })
 export class InfoComponent {
   @Input() selectedCurrencies: ICurrency[] = [];
